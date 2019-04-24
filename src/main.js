@@ -4,7 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+// 引入vuex
+import { Swiper, SwiperItem } from 'vux'
+
+Vue.component('swiper', Swiper);
+Vue.component('swiperItem', SwiperItem);
 
 // 设置rem
 import remConfig from './config/remConfig'
