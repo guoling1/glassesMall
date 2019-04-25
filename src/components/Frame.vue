@@ -87,14 +87,15 @@
           <div class="select-content">
             <div class="title">价格</div>
             <div class="price">
-
+              <input type="number" placeholder="最低价"><span>一</span><input type="number" placeholder="最高价">
             </div>
           </div>
           <div class="select-content">
             <div class="title">款式</div>
-            <div class="sex">
-
-            </div>
+            <ul class="brank">
+              <li>男款</li>
+              <li>女款</li>
+            </ul>
           </div>
           <div class="select-content">
             <div class="title">框型</div>
@@ -224,6 +225,25 @@
       font-size: 0.32rem;
       font-weight: bold;
       color: #000;
+    }
+
+    .price{
+      font-size: 0;
+      input{
+        display: inline-block;
+        margin: 0 0.2rem 0.2rem 0;
+        padding: 0 0.12rem;
+        width: 1.4rem;
+        line-height: 0.53rem;
+        border: 1px solid #f5f5f5;
+        border-radius: 0.27rem;
+        text-align: center;
+        font-size: 0.24rem;
+      }
+      span{
+        margin-right: 0.2rem;
+        font-size: 0.24rem;
+      }
     }
     .brank{
       li{
