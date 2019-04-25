@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <div class="left"><img src="../assets/back.png" alt=""></div>
-    <div class="title">护理液</div>
+    <div class="left" @click="back"><img src="../assets/back.png" alt=""></div>
+    <div class="title">{{title}}</div>
     <div class="right"></div>
   </div>
 </template>
@@ -11,6 +11,15 @@ export default {
   name: 'Header',
   data () {
     return {
+      title:''
+    }
+  },
+  created(){
+    this.title = this.$route.meta.title
+  },
+  methods:{
+    back(){
+      this.$router.go(-1)
     }
   }
 }
@@ -19,7 +28,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less" type="text/less">
   .header{
-    position: relative;
+    position: fixed;
+    width: 100%;
     height: 0.88rem;
     line-height: 0.88rem;
     background: #3d3e42;

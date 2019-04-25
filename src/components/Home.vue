@@ -34,12 +34,16 @@
         <p>万款花色</p>
       </li>
       <li>
-        <img src="../assets/nav7.png" alt="">
-        <p>护理液</p>
+        <router-link to="/solution">
+          <img src="../assets/nav7.png" alt="">
+          <p>护理液</p>
+        </router-link>
       </li>
       <li>
-        <img src="../assets/nav8.png" alt="">
-        <p>框架眼镜</p>
+        <router-link to="/frame">
+          <img src="../assets/nav8.png" alt="">
+          <p>框架眼镜</p>
+        </router-link>
       </li>
     </ul>
     <div class="push clear">
@@ -95,7 +99,38 @@
         <p class="title">推荐好物</p>
       </div>
       <ul class="content">
-
+        <li>
+          <img src="../assets/shop.png" alt="" class="shop-img">
+          <p class="name"><span>[硅水凝胶工艺，高透氧水润]</span>强生安视优恒</p>
+          <div class="bottom clear">
+            <div class="left fl">￥218 <s>￥218</s></div>
+            <div class="right fr">82评论</div>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/shop.png" alt="" class="shop-img">
+          <p class="name"><span>[硅水凝胶工艺，高透氧水润]</span>强生安视优恒</p>
+          <div class="bottom clear">
+            <div class="left fl">￥218 <s>￥218</s></div>
+            <div class="right fr">82评论</div>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/shop.png" alt="" class="shop-img">
+          <p class="name"><span>[硅水凝胶工艺，高透氧水润]</span>强生安视优恒</p>
+          <div class="bottom clear">
+            <div class="left fl">￥218 <s>￥218</s></div>
+            <div class="right fr">82评论</div>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/shop.png" alt="" class="shop-img">
+          <p class="name"><span>[硅水凝胶工艺，高透氧水润]</span>强生安视优恒</p>
+          <div class="bottom clear">
+            <div class="left fl">￥218 <s>￥218</s></div>
+            <div class="right fr">82评论</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -213,6 +248,8 @@ export default {
         width: 3.45rem;
         height: 100%;
         border-right: 1px solid #f5f5f5;
+        background: url("../assets/shop1.png") no-repeat bottom;
+        background-size: 80%;
         .left-title{
           margin: 0.31rem 0 0.22rem;
           width: 1.59rem;
@@ -228,7 +265,7 @@ export default {
           color: #6e9d03;
         }
         .price{
-          margin: 0.6rem 0 0.2rem;
+          margin: 0.4rem 0 0.15rem;
           font-size: 0.22rem;
           span{
             font-size: 0.5rem;
@@ -250,6 +287,8 @@ export default {
         height: 2.27rem;
         text-align: left;
         border-bottom: 1px solid #f5f5f5;
+        background: url("../assets/shop2.png") no-repeat bottom right;
+        background-size: 40%;
         &:last-child{
           border: none;
         }
@@ -265,7 +304,7 @@ export default {
           white-space: nowrap;
         }
         .price{
-          margin: 0.25rem 0 0.1rem;
+          margin: 0.15rem 0 0;
           font-size: 0.22rem;
           span{
             font-size: 0.5rem;
@@ -306,6 +345,51 @@ export default {
   .recommend{
     .session-title{
       padding-left: 0.3rem;
+    }
+    .content{
+      font-size: 0;
+      li{
+        display: inline-block;
+        width: 3.73rem;
+        height: 4.13rem;
+        border: 0.01rem solid #f5f5f5;
+        font-size: 0.24rem;
+        .shop-img{
+          width: 3.45rem;
+          height: 2.9rem;
+        }
+        .name{
+          margin-top: 0.05rem;
+          padding: 0 0.06rem;
+          color: #000;
+          height: 0.5rem;
+          text-align: left;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient: vertical;
+          span{
+            color: #ff0000;
+          }
+        }
+        .bottom{
+          margin-top: 0.15rem;
+          text-align: left;
+          color: #9999;
+          .left{
+            font-size: 0.36rem;
+            color: #ff0000;
+            s{
+              color: #9999;
+              font-size: 0.24rem;
+            }
+          }
+          .right{
+            margin: 0.05rem 0.06rem 0 0;
+          }
+        }
+      }
     }
   }
 </style>
