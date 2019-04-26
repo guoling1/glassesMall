@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="fix-top">
-      <div class="active ">综合</div>
+      <div class="active">综合</div>
       <div>销量</div>
       <div>价格 <img src="../assets/horn.png" alt=""></div>
       <div class="select" @click="show9=true">筛选</div>

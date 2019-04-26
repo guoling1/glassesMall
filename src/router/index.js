@@ -12,6 +12,10 @@ import Solution from "../components/Solution";
 import Frame from "../components/Frame";
 import Search from "../components/Search";
 import ShopDetail from "../components/ShopDetail";
+import SelectFrame from "../components/SelectFrame";
+import SelectContact from "../components/SelectContact";
+import Coupon from "../components/Coupon";
+import Score from "../components/Score";
 
 Vue.use(Router)
 
@@ -77,6 +81,54 @@ export default new Router({
       },
       components: {
         default: ShopDetail,
+        header: Header
+      }
+    },
+    {
+      path: '/selectFrame',
+      name: 'SelectFrame',
+      meta:{
+        title:"属性选择",
+        keepAlive: false
+      },
+      components: {
+        default: SelectFrame,
+        header: Header
+      }
+    },
+    {
+      path: '/selectContact',
+      name: 'SelectContact',
+      meta:{
+        title:"属性选择",
+        keepAlive: false
+      },
+      components: {
+        default: SelectContact,
+        header: Header
+      }
+    },
+    {
+      path: '/coupon',
+      name: 'Coupon',
+      meta:{
+        title:"优惠券",
+        keepAlive: false
+      },
+      components: {
+        default: Coupon,
+        header: Header
+      }
+    },
+    {
+      path: '/score',
+      name: 'Score',
+      meta:{
+        title:"优惠券",
+        keepAlive: false
+      },
+      components: {
+        default: Score,
         header: Header
       }
     },

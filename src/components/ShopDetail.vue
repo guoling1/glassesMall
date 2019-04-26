@@ -6,6 +6,7 @@
       <div>商品详情</div>
       <div>商品评价</div>
     </div>
+    <!--简介-->
     <div class="intro">
       <div class="base">
         <div class="left">
@@ -39,11 +40,95 @@
               <span class="name">小**4</span>
               <span class="date fr">2019-03-01 17:57:22</span>
             </div>
-            <div class="score"></div>
+            <div class="score">
+              <img src="../assets/star1.png" alt="">
+              <img src="../assets/star2.png" alt="">
+            </div>
+            <div class="detail">收到，目前还没有试戴</div>
+          </li>
+          <li>
+            <div class="top">
+              <img src="../assets/avatar.png" alt="">
+              <span class="name">小**4</span>
+              <span class="date fr">2019-03-01 17:57:22</span>
+            </div>
+            <div class="score">
+              <img src="../assets/star1.png" alt="">
+              <img src="../assets/star2.png" alt="">
+            </div>
+            <div class="detail">收到，目前还没有试戴</div>
+          </li>
+          <li>
+            <div class="top">
+              <img src="../assets/avatar.png" alt="">
+              <span class="name">小**4</span>
+              <span class="date fr">2019-03-01 17:57:22</span>
+            </div>
+            <div class="score">
+              <img src="../assets/star1.png" alt="">
+              <img src="../assets/star2.png" alt="">
+            </div>
             <div class="detail">收到，目前还没有试戴</div>
           </li>
         </ul>
       </div>
+    </div>
+    <!--详情-->
+    <div class="shop-detail">
+
+    </div>
+    <!--评价-->
+    <div class="shop-comment">
+      <ul>
+        <li>
+          <div class="top">
+            <img src="../assets/avatar.png" alt="">
+            <span class="name">小**4</span>
+            <span class="date fr">2019-03-01 17:57:22</span>
+          </div>
+          <div class="score">
+            <img src="../assets/star1.png" alt="">
+            <img src="../assets/star2.png" alt="">
+          </div>
+          <div class="detail">收到，目前还没有试戴</div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="../assets/avatar.png" alt="">
+            <span class="name">小**4</span>
+            <span class="date fr">2019-03-01 17:57:22</span>
+          </div>
+          <div class="score">
+            <img src="../assets/star1.png" alt="">
+            <img src="../assets/star2.png" alt="">
+          </div>
+          <div class="detail">收到，目前还没有试戴</div>
+        </li>
+        <li>
+          <div class="top">
+            <img src="../assets/avatar.png" alt="">
+            <span class="name">小**4</span>
+            <span class="date fr">2019-03-01 17:57:22</span>
+          </div>
+          <div class="score">
+            <img src="../assets/star1.png" alt="">
+            <img src="../assets/star2.png" alt="">
+          </div>
+          <div class="detail">收到，目前还没有试戴</div>
+        </li>
+      </ul>
+      <p class="more">查看全部评论（4672）</p>
+    </div>
+    <div class="fix-bottom">
+      <div class="collect">
+        <img src="../assets/starWhite.png" alt="">
+        <p>收藏</p>
+      </div>
+      <div class="collect">
+        <img src="../assets/shopCar.png" alt="">
+        <p>购物车</p>
+      </div>
+      <div class="buy">立即购买</div>
     </div>
   </div>
 </template>
@@ -66,7 +151,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less" type="text/less">
   .shopDetail{
-    padding-top: 0.88rem;
+    padding: 0.88rem 0 0.98rem;
     .tab{
       padding-top: 0.22rem;
       display: flex;
@@ -185,11 +270,91 @@ export default {
                 color: #666;
               }
             }
+            .score{
+              margin: 0.18rem 0;
+              img{
+                margin-right: 0.06rem;
+                width: 0.25rem;
+                height: 0.24rem;
+              }
+            }
             .detail{
               font-size: 0.28rem;
             }
           }
         }
+      }
+    }
+    .shop-comment{
+      padding: 0 0.3rem;
+      text-align: left;
+      ul{
+        li{
+          padding: 0.26rem 0;
+          border-bottom: 1px solid #f5f5f5;
+          .top{
+            line-height: 0.9rem;
+            img{
+              margin-right: 0.4rem;
+              width: 0.9rem;
+              height: 0.9rem;
+              vertical-align: middle;
+            }
+            .name{
+              font-size: 0.32rem;
+            }
+            .date{
+              color: #666;
+            }
+          }
+          .score{
+            margin: 0.18rem 0;
+            img{
+              margin-right: 0.06rem;
+              width: 0.25rem;
+              height: 0.24rem;
+            }
+          }
+          .detail{
+            font-size: 0.28rem;
+          }
+        }
+      }
+      .more{
+        padding: 0.7rem 0 0.8rem;
+        color: #ff6162;
+        text-align: center;
+      }
+    }
+    .fix-bottom{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 0.98rem;
+      background: #000;
+      color: #fff;
+      text-align: left;
+      .collect{
+        display: inline-block;
+        font-size: 0.28rem;
+        text-align: center;
+        &:first-child{
+          margin: 0 0.8rem 0 0.9rem;
+        }
+        img{
+          margin: 0.12rem 0 0;
+          height: 0.42rem;
+          width: auto;
+        }
+      }
+      .buy{
+        float: right;
+        width: 3.76rem;
+        height: 100%;
+        line-height: 0.98rem;
+        background: #8ec31f;
+        font-size: 0.32rem;
+        text-align: center;
       }
     }
   }

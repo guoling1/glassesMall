@@ -7,12 +7,13 @@ import router from './router'
 Vue.config.productionTip = false;
 
 // 引入vuex
-import { Swiper, SwiperItem, Popup, TransferDom } from 'vux'
+import { Swiper, SwiperItem, Popup, TransferDom, XNumber} from 'vux'
 
 Vue.component('swiper', Swiper);
 Vue.component('swiperItem', SwiperItem);
 Vue.component('popup', Popup);
-Vue.directive('transferDom',TransferDom)
+Vue.component('x-number', XNumber);
+Vue.directive('transferDom',TransferDom);
 
 // 设置rem
 import remConfig from './config/remConfig'
