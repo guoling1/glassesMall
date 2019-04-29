@@ -32,6 +32,25 @@
       </div>
       <p class="tip">差300分到LV4，新特权即将开启</p>
     </div>
+    <div class="detail">
+      <div class="title"><span>积分明细</span></div>
+      <ul>
+        <li class="clear">
+          <div class="left fl">
+            <p class="name">会员签到</p>
+            <p>2018-06-21</p>
+          </div>
+          <div class="right fr">+150</div>
+        </li>
+        <li class="clear">
+          <div class="left fl">
+            <p class="name">会员签到</p>
+            <p>2018-06-21</p>
+          </div>
+          <div class="right fr">+150</div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -141,6 +160,41 @@ export default {
         line-height: 0.8rem;
       }
     }
-
+    .detail{
+      text-align: left;
+      .title{
+        padding: 0.45rem 0 0.17rem 0.3rem;
+        border-bottom: 1px solid #e7e7e7;
+        span{
+          padding-left: 0.17rem;
+          font-size: 0.32rem;
+          font-weight: 900;
+          color: #6e9d03;
+          border-left: 0.04rem solid #6e9d03;
+        }
+      }
+      ul{
+        padding: 0.1rem 0.3rem;
+        li{
+          padding: 0.3rem 0;
+          border-bottom: 1px solid #e7e7e7;
+          .left{
+            color: #999;
+            .name{
+              margin-bottom: 0.14rem;
+              font-size: 0.28rem;
+              font-weight: bold;
+              color: #000;
+            }
+          }
+          .right{
+            margin-top: 0.2rem;
+            font-size: 0.28rem;
+            font-weight: bold;
+            color: #ff2929;
+          }
+        }
+      }
+    }
   }
 </style>

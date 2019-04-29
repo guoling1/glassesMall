@@ -16,6 +16,11 @@ import SelectFrame from "../components/SelectFrame";
 import SelectContact from "../components/SelectContact";
 import Coupon from "../components/Coupon";
 import Score from "../components/Score";
+import PersonData from "../components/PersonData";
+import Address from "../components/Address";
+import AddressAdd from "../components/AddressAdd";
+import Optometry from "../components/Optometry";
+import OptometryAdd from "../components/OptometryAdd";
 
 Vue.use(Router)
 
@@ -133,10 +138,66 @@ export default new Router({
       }
     },
     {
+      path: '/personData',
+      name: 'PersonData',
+      meta:{
+        title:"个人资料",
+        keepAlive: false
+      },
+      components: {
+        default: PersonData,
+        header: Header
+      }
+    },
+    {
+      path: '/address',
+      name: 'Address',
+      meta:{
+        title:"个人资料",
+        keepAlive: false
+      },
+      components: {
+        default: Address,
+        header: Header
+      }
+    },
+    {
+      path: '/optometry',
+      name: 'Optometry',
+      meta:{
+        title:"验光单",
+        keepAlive: false
+      },
+      components: {
+        default: Optometry,
+        header: Header
+      }
+    },
+    {
+      path: '/optometryAdd',
+      name: 'OptometryAdd',
+      meta:{
+        title:"验光单",
+        keepAlive: false
+      },
+      components: {
+        default: OptometryAdd,
+        header: Header
+      }
+    },
+    {
       path: '/search',
       name: 'Search',
       components: {
         default: Search,
+        header: Header
+      }
+    },
+    {
+      path: '/addressAdd',
+      name: 'AddressAdd',
+      components: {
+        default: AddressAdd,
         header: Header
       }
     },
